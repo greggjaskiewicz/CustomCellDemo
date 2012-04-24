@@ -11,21 +11,16 @@
 
 @implementation DemoTableViewCell
 
-@synthesize titleLabel;
-@synthesize ageProgressView;
-@synthesize fooData;
-
-- (void)dealloc 
-{
-    NSLog(@"DEALLOC");
-}
+@synthesize titleLabel      = _titleLable;
+@synthesize ageProgressView = _ageProgressView;
+@synthesize fooData         = _fooData;
 
 - (void)setFooData:(Foo *)newFooData
 {
-    fooData = newFooData;
-    
-    self.titleLabel.text = self.fooData.name;
-    self.ageProgressView.progress = self.fooData.age / 100.0f;
+  _fooData = newFooData;
+  
+  self.titleLabel.text = _fooData.name;
+  self.ageProgressView.progress = _fooData.age / 100.0f;
 }
 
 @end

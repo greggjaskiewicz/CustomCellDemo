@@ -8,11 +8,10 @@
 
 #import "Foo.h"
 
-
 @implementation Foo
 
-@synthesize name, age;
-
+@synthesize name = _name;
+@synthesize age = _age;
 
 - (id)initWithName:(NSString *)newName age:(NSUInteger)newAge
 {

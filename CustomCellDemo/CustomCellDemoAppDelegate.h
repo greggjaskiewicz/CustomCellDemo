@@ -10,9 +10,7 @@
 
 @class DemoTableViewController;
 
-@interface CustomCellDemoAppDelegate : NSObject <UIApplicationDelegate> {
-
-}
+@interface CustomCellDemoAppDelegate : NSObject <UIApplicationDelegate> 
 
 @property (nonatomic) IBOutlet UIWindow *window;
 

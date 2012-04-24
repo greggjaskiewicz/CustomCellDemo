@@ -10,10 +10,10 @@
 
 @class Foo;
 
-@interface DemoTableViewCell : UITableViewCell {
-    
-    UILabel *titleLabel;
-    UIProgressView *ageProgressView;
+@interface DemoTableViewCell : UITableViewCell 
+{    
+  UILabel *titleLabel;
+  UIProgressView *ageProgressView;
 }
 
 @property (nonatomic) IBOutlet UILabel *titleLabel;

@@ -9,12 +9,11 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Foo : NSObject {
-    
-}
+@interface Foo : NSObject 
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, assign) NSUInteger age;
+
 
 - (id)initWithName:(NSString *)name age:(NSUInteger)age;
 
