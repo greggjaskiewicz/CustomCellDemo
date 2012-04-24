@@ -15,6 +15,13 @@
 @synthesize ageProgressView = _ageProgressView;
 @synthesize fooData         = _fooData;
 
+- (void)initFont
+{
+  CGFloat size = 26; //[UIFont systemFontSize];
+  UIFont *font = [UIFont fontWithName:@"Perfect DOS VGA 437" size:size];
+  self.titleLabel.font = font;
+}
+
 - (void)setFooData:(Foo *)newFooData
 {
   _fooData = newFooData;

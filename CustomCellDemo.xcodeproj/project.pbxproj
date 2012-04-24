@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27824B68154737C5002D1B30 /* DOSVGA.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27824B67154737C5002D1B30 /* DOSVGA.ttf */; };
 		41548C8513D20D260021220A /* README.TXT in Resources */ = {isa = PBXBuildFile; fileRef = 41548C8413D20D260021220A /* README.TXT */; };
 		4179541413B0418000D2594F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4179541313B0418000D2594F /* UIKit.framework */; };
 		4179541613B0418000D2594F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4179541513B0418000D2594F /* Foundation.framework */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27824B67154737C5002D1B30 /* DOSVGA.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DOSVGA.ttf; sourceTree = "<group>"; };
 		41548C8413D20D260021220A /* README.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.TXT; sourceTree = "<group>"; };
 		4179540F13B0418000D2594F /* CustomCellDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCellDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4179541313B0418000D2594F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -116,6 +118,7 @@
 		4179543813B041D900D2594F /* Demo TableView */ = {
 			isa = PBXGroup;
 			children = (
+				27824B67154737C5002D1B30 /* DOSVGA.ttf */,
 				4179543313B041D400D2594F /* DemoTableViewController.h */,
 				4179543413B041D400D2594F /* DemoTableViewController.m */,
 				4179543513B041D400D2594F /* DemoTableViewController.xib */,
@@ -188,6 +191,7 @@
 				4179543713B041D400D2594F /* DemoTableViewController.xib in Resources */,
 				4179544013B0481A00D2594F /* DemoTableViewCell.xib in Resources */,
 				41548C8513D20D260021220A /* README.TXT in Resources */,
+				27824B68154737C5002D1B30 /* DOSVGA.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +310,7 @@
 				4179542F13B0418000D2594F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4179543013B0418000D2594F /* Build configuration list for PBXNativeTarget "CustomCellDemo" */ = {
 			isa = XCConfigurationList;
@@ -315,7 +319,7 @@
 				4179543213B0418000D2594F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

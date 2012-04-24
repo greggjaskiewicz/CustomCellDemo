@@ -18,12 +18,12 @@ static NSString *CellClassName = @"DemoTableViewCell";
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithStyle:style];
-    if (self) 
-    {
-        cellLoader = [UINib nibWithNibName:CellClassName bundle:[NSBundle mainBundle]];
-    }
-    return self;
+  self = [super initWithStyle:style];
+  if (self) 
+  {
+    cellLoader = [UINib nibWithNibName:CellClassName bundle:[NSBundle mainBundle]];
+  }
+  return self;
 }
 
 
@@ -31,26 +31,27 @@ static NSString *CellClassName = @"DemoTableViewCell";
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+  return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.dataItems count];
+  return [self.dataItems count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView 
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Note: I set the cell's Identifier property in Interface Builder to DemoTableViewCell.
-    DemoTableViewCell *cell = (DemoTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellClassName];
-    if (!cell)
-    {
-        NSArray *topLevelItems = [cellLoader instantiateWithOwner:self options:nil];
-        cell = [topLevelItems objectAtIndex:0];
-    }
-    cell.fooData = [dataItems objectAtIndex:indexPath.row];
-    return cell;
+  // Note: I set the cell's Identifier property in Interface Builder to DemoTableViewCell.
+  DemoTableViewCell *cell = (DemoTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellClassName];
+  if (!cell)
+  {
+    NSArray *topLevelItems = [cellLoader instantiateWithOwner:self options:nil];
+    cell = [topLevelItems objectAtIndex:0];
+    [cell initFont];
+  }
+  cell.fooData = [dataItems objectAtIndex:indexPath.row];
+  return cell;
 }
 
 @end

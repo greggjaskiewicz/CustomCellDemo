@@ -21,4 +21,6 @@
 
 @property (nonatomic) Foo *fooData;
 
+- (void)initFont;
+
 @end
