@@ -16,9 +16,9 @@
     UIProgressView *ageProgressView;
 }
 
-@property (nonatomic, retain) IBOutlet UILabel *titleLabel;
-@property (nonatomic, retain) IBOutlet UIProgressView *ageProgressView;
+@property (nonatomic) IBOutlet UILabel *titleLabel;
+@property (nonatomic) IBOutlet UIProgressView *ageProgressView;
 
-@property (nonatomic, retain) Foo *fooData;
+@property (nonatomic) Foo *fooData;
 
 @end

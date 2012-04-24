@@ -18,16 +18,10 @@
 - (void)dealloc 
 {
     NSLog(@"DEALLOC");
-    [titleLabel release];
-    [ageProgressView release];
-    [fooData release];
-    [super dealloc];
 }
 
 - (void)setFooData:(Foo *)newFooData
 {
-    [newFooData retain];
-    [fooData release];
     fooData = newFooData;
     
     self.titleLabel.text = self.fooData.name;

@@ -14,8 +14,8 @@
 
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic) IBOutlet UIWindow *window;
 
-@property (nonatomic, retain) IBOutlet DemoTableViewController *viewController;
+@property (nonatomic) IBOutlet DemoTableViewController *viewController;
 
 @end

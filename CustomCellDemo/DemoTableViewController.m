@@ -21,16 +21,11 @@ static NSString *CellClassName = @"DemoTableViewCell";
     self = [super initWithStyle:style];
     if (self) 
     {
-        cellLoader = [[UINib nibWithNibName:CellClassName bundle:[NSBundle mainBundle]] retain];
+        cellLoader = [UINib nibWithNibName:CellClassName bundle:[NSBundle mainBundle]];
     }
     return self;
 }
 
-- (void)dealloc
-{
-    [cellLoader release];
-    [super dealloc];
-}
 
 #pragma mark - Table view data source
 

@@ -19,10 +19,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSMutableArray *dataItems = [[[NSMutableArray alloc] init] autorelease];
+    NSMutableArray *dataItems = [[NSMutableArray alloc] init];
     for (int i = 1; i <= 100; ++i) 
     {
-        [dataItems addObject:[[[Foo alloc] initWithName:[NSString stringWithFormat:@"Foo %d", i] age:i] autorelease]];       
+        [dataItems addObject:[[Foo alloc] initWithName:[NSString stringWithFormat:@"Foo %d", i] age:i]];       
     }
 
     self.viewController.dataItems = dataItems;
@@ -71,11 +71,5 @@
      */
 }
 
-- (void)dealloc
-{
-    [_window release];
-    [_viewController release];
-    [super dealloc];
-}
 
 @end

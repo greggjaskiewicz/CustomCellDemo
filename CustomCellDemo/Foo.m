@@ -13,10 +13,6 @@
 
 @synthesize name, age;
 
-- (void)dealloc {
-    [name release];
-    [super dealloc];
-}
 
 - (id)initWithName:(NSString *)newName age:(NSUInteger)newAge
 {

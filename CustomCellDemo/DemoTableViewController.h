@@ -12,6 +12,6 @@
     UINib *cellLoader;
 }
 
-@property (nonatomic, retain) NSArray *dataItems;
+@property (nonatomic) NSArray *dataItems;
 
 @end
